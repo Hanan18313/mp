@@ -1,0 +1,308 @@
+[2019-01-24T09:40:54.398] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \')\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'INSERT INTO registration(regis_name,stu_id,clbum,department,major,mobile,e_mail,social_account,company,resident,addr1,addr2,open_id,status) VALUE("undefined","null","null","null","null","17328867149","null","null","null","null","null","null","ofdKW5MWR-jVRU56We7fRYrAsrK4","2",)' }
+[2019-01-24T09:41:46.753] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'stu_id' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'stu_id\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO registration(regis_name,stu_id,clbum,department,major,mobile,e_mail,social_account,company,resident,addr1,addr2,open_id,status) VALUE("undefined","null","null","null","null","17328867149","null","null","null","null","null","null","ofdKW5MWR-jVRU56We7fRYrAsrK4","2")' }
+[2019-01-24T09:43:58.275] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'stu_id' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'stu_id\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO registration(regis_name,stu_id,clbum,department,major,mobile,e_mail,social_account,company,resident,addr1,addr2,open_id,status) VALUE("韩维龙","null","null","null","null","17328867149","null","null","null","null","null","null","ofdKW5MWR-jVRU56We7fRYrAsrK4","2")' }
+[2019-01-24T09:48:38.624] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'ofdKW5MWR-jVRU56We7fRYrAsrK4' for column 'open_id' at row 1
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'ofdKW5MWR-jVRU56We7fRYrAsrK4\' for column \'open_id\' at row 1',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO registration(regis_name,clbum,department,major,mobile,e_mail,social_account,company,resident,addr1,addr2,open_id,status) VALUE("韩维龙","null","null","null","17328867149","null","null","null","null","null","null","ofdKW5MWR-jVRU56We7fRYrAsrK4","2")' }
+[2019-01-24T09:49:09.187] [INFO] log_file - { Error: ER_NO_DEFAULT_FOR_FIELD: Field 'regis_id' doesn't have a default value
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_DEFAULT_FOR_FIELD',
+  errno: 1364,
+  sqlMessage: 'Field \'regis_id\' doesn\'t have a default value',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO registration(regis_name,clbum,department,major,mobile,e_mail,social_account,company,resident,addr1,addr2,open_id,status) VALUE("韩维龙","null","null","null","17328867149","null","null","null","null","null","null","ofdKW5MWR-jVRU56We7fRYrAsrK4","2")' }
+[2019-01-24T15:13:30.001] [INFO] log_file - { Error: ER_BAD_FIELD_ERROR: Unknown column 'name' in 'field list'
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Handshake.onConnect (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'name\' in \'field list\'',
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT name FROM reunion' }
+[2019-01-24T16:10:46.226] [INFO] log_file - { Error: ER_NO_DEFAULT_FOR_FIELD: Field 'org_id' doesn't have a default value
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Handshake.onConnect (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_DEFAULT_FOR_FIELD',
+  errno: 1364,
+  sqlMessage: 'Field \'org_id\' doesn\'t have a default value',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO committee(group_openid,group_name,time) VALUE("","杭州组委会","2019-1-24 16:10:46")' }
+[2019-01-24T16:11:21.590] [INFO] log_file - { Error: ER_NO_DEFAULT_FOR_FIELD: Field 'org_id' doesn't have a default value
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Handshake.onConnect (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_DEFAULT_FOR_FIELD',
+  errno: 1364,
+  sqlMessage: 'Field \'org_id\' doesn\'t have a default value',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO committee(group_openid,group_name,time) VALUE("","杭州组委会","2019-1-24 16:11:21")' }
+[2019-01-24T16:11:46.207] [INFO] log_file - { Error: ER_NO_DEFAULT_FOR_FIELD: Field 'org_id' doesn't have a default value
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Handshake.onConnect (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_DEFAULT_FOR_FIELD',
+  errno: 1364,
+  sqlMessage: 'Field \'org_id\' doesn\'t have a default value',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO committee(group_openid,group_name,time) VALUE("","杭州组委会","2019-1-24 16:11:46")' }
+[2019-01-24T16:12:43.597] [INFO] log_file - { Error: ER_NO_DEFAULT_FOR_FIELD: Field 'org_id' doesn't have a default value
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Handshake.onConnect (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_DEFAULT_FOR_FIELD',
+  errno: 1364,
+  sqlMessage: 'Field \'org_id\' doesn\'t have a default value',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO committee(group_openid,group_name,time) VALUE("","杭州组委会","2019-1-24 16:12:43")' }
+[2019-01-24T16:13:04.706] [INFO] log_file - { Error: ER_NO_DEFAULT_FOR_FIELD: Field 'org_id' doesn't have a default value
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Handshake.onConnect (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_NO_DEFAULT_FOR_FIELD',
+  errno: 1364,
+  sqlMessage: 'Field \'org_id\' doesn\'t have a default value',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'INSERT INTO committee(group_openid,group_name,time) VALUE("","杭州组委会","2019-1-24 16:13:4")' }

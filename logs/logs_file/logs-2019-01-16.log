@@ -1,0 +1,308 @@
+[2019-01-16T08:50:34.730] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '' for column 'book_time' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect date value: \'\' for column \'book_time\' at row 2',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "0", is_pick = 1, pick_time = "2月2号下午2点", pick_place = "虹桥机场", is_taking = 1, is_book = true, book_time = "", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T08:50:48.082] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '' for column 'book_time' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Handshake.onConnect (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect date value: \'\' for column \'book_time\' at row 2',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "0", is_pick = 1, pick_time = "2月2号下午2点", pick_place = "虹桥机场", is_taking = 1, is_book = true, book_time = "", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T08:51:33.263] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '' for column 'book_time' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect date value: \'\' for column \'book_time\' at row 2',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "0", is_pick = 1, pick_time = "2月2号下午2点", pick_place = "虹桥机场", is_taking = 1, is_book = false, book_time = "", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T08:52:58.945] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '' for column 'book_time' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect date value: \'\' for column \'book_time\' at row 2',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "0", is_pick = 1, pick_time = "2月2号下午2点", pick_place = "虹桥机场", is_taking = 1, is_book = true, book_time = "", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T08:59:58.663] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '' for column 'book_time' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect date value: \'\' for column \'book_time\' at row 2',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "0", is_pick = 1, pick_time = "2月2号下午2点", pick_place = "虹桥机场", is_taking = 1, is_book = true, book_time = "", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T09:00:25.784] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE: Incorrect date value: '' for column 'book_time' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE',
+  errno: 1292,
+  sqlMessage: 'Incorrect date value: \'\' for column \'book_time\' at row 2',
+  sqlState: '22007',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "0", is_pick = 1, pick_time = "2月2号下午2点", pick_place = "虹桥机场", is_taking = 1, is_book = 0, book_time = "", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T09:50:12.757] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'null\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM alumni_news ORDER BY news_time DESC limit null' }
+[2019-01-16T09:59:27.575] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'hotel' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'hotel\' at row 2',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "null", is_pick = 0, pick_time = "", pick_place = "", is_taking = 0, is_book = true, book_time = "1970-1-1", shift = "null" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T10:00:21.729] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'hotel' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'hotel\' at row 2',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "null", is_pick = 0, pick_time = "", pick_place = "", is_taking = 0, is_book = 0, book_time = "1970-1-1", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T10:00:39.915] [INFO] log_file - { Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'hotel' at row 2
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+  errno: 1366,
+  sqlMessage: 'Incorrect integer value: \'null\' for column \'hotel\' at row 2',
+  sqlState: 'HY000',
+  index: 0,
+  sql: 'UPDATE alumni_affairs SET hotel = "null", is_pick = 0, pick_time = "", pick_place = "", is_taking = 0, is_book = 0, book_time = "1970-1-1", shift = "" WHERE open_id = "oEuIE5nE0SfAUOWG-teq6FelpKTw"' }
+[2019-01-16T11:09:31.269] [INFO] log_file - { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 1
+    at Query.Sequence._packetToError (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    --------------------
+    at Protocol._enqueue (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:200:25)
+    at D:\wx_demo\mp-server\app.js:73:12
+    at Ping.onOperationComplete (D:\wx_demo\mp-server\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.<anonymous> (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:502:10)
+    at Ping._callback (D:\wx_demo\mp-server\node_modules\mysql\lib\Connection.js:468:16)
+    at Ping.Sequence.end (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\wx_demo\mp-server\node_modules\mysql\lib\protocol\Parser.js:76:12)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'null\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT * FROM alumni_news ORDER BY news_time DESC limit null' }
