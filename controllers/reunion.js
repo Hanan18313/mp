@@ -23,12 +23,11 @@ this.userInfo = function(req,res){
 }
 this.apply = function(req,res){
     var query = req.body
-        name = query.name
-        openid = query.openid
-        portrait = query.avatarUrl
+    var name = query.name
+    var openid = query.openid
+    var portrait = query.avatarUrl
     Mod_reunion.apply(name,function(result){
-        console.log(result)
-        if(result){
+        if(result[0] != null){
             // 数据库存在该名字
             if(result[0].open_id){
                 // 改名字已被占用

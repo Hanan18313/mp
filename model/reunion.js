@@ -22,6 +22,8 @@ this.apply = function(name,callback){
 this.apply_openid = function(name,openid,portrait,callback){
     let str = 'UPDATE reunion SET open_id = "'+openid+'", portrait = "'+portrait+'" WHERE user_name = "'+name+'"';
     CON(str,function(err,result){
+        console.log(err)
+        console.log(result)
         if(err){
             LOG(err)
         }else{
