@@ -66,7 +66,6 @@ this.complain = function(req,res){
         openid:params.openid,
         portrait:params.avatarUrl
     }
-    console.log(obj)
     Mod_reunion.capture_complain(openid,function(result){
         if(result.length == 0){
             Mod_reunion.complain(obj,function(result){
@@ -416,7 +415,6 @@ this.renewal_affairs = function(req,res){
 this.capture_affairs = function(req,res){
     var openid = url.parse(req.url,true).query.openid
     Mod_reunion.capture_affairs(openid,function(result){
-        console.log(result)
         res.send(result)
     })
 }
@@ -490,6 +488,21 @@ this.myAdviceReaded = function(req,res){
         res.send({
             code:200,
             msg:'查看建议'
+        })
+    })
+}
+this.release_news = function(req,res){
+    var params = req.body
+    var obj = {
+        title:params.title,
+        content:params.content,
+        is_top:params.is_top,
+        time:Base.now_time()
+    }
+    Mod_reunion.release_news(obj,function(result){
+        res.send({
+            code:200,
+            msg:'发布消息'
         })
     })
 }

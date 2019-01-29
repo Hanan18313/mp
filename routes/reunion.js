@@ -69,6 +69,9 @@ module.exports = function(app){
     app.post('/reunion/myAdvice',function(req,res,next){
         Con_reunion.myAdviceReaded(req,res,next)
     })
+    app.put('/reunion/release_news',function(req,res,next){
+        Con_reunion.release_news(req,res,next)
+    })
     /**管理端 */
     app.options('/reunion_cli/*', function(req, res, next) {
 		res.header("Access-Control-Allow-Origin", "*");

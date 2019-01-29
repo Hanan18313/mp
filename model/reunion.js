@@ -111,7 +111,7 @@ this.news = function(callback){
 }
 this.more_news = function(page,pageSize,callback){
     let startPage = Number((page-1)*pageSize)
-    let str = 'SELECT * FROM news limit '+startPage+', '+pageSize;
+    let str = 'SELECT * FROM news ORDER BY news_time DESC limit '+startPage+', '+pageSize;
     CON(str,function(err,result){
         if(err){ 
             LOG(err)
@@ -286,6 +286,16 @@ this.myAdvice = function(openid,callback){
 }
 this.myAdviceReaded = function(openid,callback){
     let str = 'UPDATE record SET is_read = 1 WHERE r_openid = "'+openid+'"';
+    CON(str,function(err,result){
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    })
+}
+this.release_news = function(obj,callback){
+    let str = 'INSERT INTO news (news_title,news_content,news_time,is_top) VALUE("'+obj.title+'","'+obj.content+'","'+obj.time+'",'+obj.is_top+')';
     CON(str,function(err,result){
         if(err){
             LOG(err)
