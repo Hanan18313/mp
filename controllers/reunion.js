@@ -150,6 +150,13 @@ this.more_news = function(req,res){
         })
     })
 }
+this.detail_news = function(req,res){
+    var news_id = url.parse(req.url,true).query.news_id
+    Mod_reunion.detail_news(news_id,function(result){
+        result[0].news_time = Base.formatDate(result[0].news_time)
+        res.send(result)
+    })
+}
 this.signIn = function(req,res){
     var openid = req.body.openid
     var avatarUrl = req.body.avatarUrl

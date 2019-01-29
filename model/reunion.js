@@ -120,6 +120,16 @@ this.more_news = function(page,pageSize,callback){
         }
     })
 }
+this.detail_news = function(news_id,callback){
+    let str = 'SELECT * FROM news WHERE news_id = "'+news_id+'"';
+    CON(str,function(err,result){
+        if(err){ 
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    })
+}
 this.check_reunion = function(openid,callback){
     let str = 'SELECT * FROM registration WHERE open_id = "'+openid+'"';
     CON(str,function(err,result){

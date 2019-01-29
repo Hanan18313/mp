@@ -33,6 +33,9 @@ module.exports = function(app){
     app.get('/reunion/more_news',function(req,res,next){
         Con_reunion.more_news(req,res,next)
     })
+    app.get('/reunion/detail_news',function(req,res,next){
+        Con_reunion.detail_news(req,res,next)
+    })
     app.put('/reunion/signIn',function(req,res,next){
         Con_reunion.signIn(req,res,next)
     })
