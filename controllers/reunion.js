@@ -27,7 +27,7 @@ this.apply = function(req,res){
         openid = query.openid
         portrait = query.avatarUrl
     Mod_reunion.apply(name,function(result){
-        if(result.length == 1){
+        if(result && result.length == 1){
             if(result[0].open_id.length == 0){
                 Mod_reunion.apply_openid(name,openid,portrait,function(result){
                     res.send({
