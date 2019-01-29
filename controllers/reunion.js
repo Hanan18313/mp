@@ -27,26 +27,57 @@ this.apply = function(req,res){
         openid = query.openid
         portrait = query.avatarUrl
     Mod_reunion.apply(name,function(result){
-        if(result && result.length == 1){
-            if(result[0].open_id && result[0].open_id.length == 0){
+        console.log(result)
+        if(result){
+            // 数据库存在该名字
+            if(result[0].open_id){
+                // 改名字已被占用
+                // 返回申诉界面
+                res.send({
+                    code:400,
+                    msg:'名字已被占用'
+                })
+            }else{
+                // 合法的人，并且是第一次进入的情况
+                // 开事务
+                // 更新openId
+                // 跳转到首页
                 Mod_reunion.apply_openid(name,openid,portrait,function(result){
                     res.send({
                         code:201,
                         msg:'更新成功'
                     })
                 })
-            }else{
-                res.send({
-                    code:400,
-                    msg:'名字已被占用'
-                })
             }
         }else{
+            
+            // 数据库不存在这个人
+            // 返回非法用户界面
             res.send({
                 code:200,
                 msg:'暂无数据'
             })
         }
+        // if(result && result.length == 1){
+        //     if(result[0].open_id){
+        //         Mod_reunion.apply_openid(name,openid,portrait,function(result){
+        //             res.send({
+        //                 code:201,
+        //                 msg:'更新成功'
+        //             })
+        //         })
+        //     }else{
+        //         res.send({
+        //             code:400,
+        //             msg:'名字已被占用'
+        //         })
+        //     }
+        // }else{
+        //     res.send({
+        //         code:200,
+        //         msg:'暂无数据'
+        //     })
+        // }
     })
 }
 this.capture_apply = function(req,res){
