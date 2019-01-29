@@ -113,9 +113,9 @@ this.news = function(req,res){
             }).then(() =>{
                 for(let i = 0; i < res_news.length; i++){
                     res_news[i].news_time = Base.formatDate(res_news[i].news_time)
-                    res_top[0].news_time = Base.formatDate(res_top[0].news_time)
                 }
             }).then(() =>{
+                res_top[0].news_time = Base.formatDate(res_top[0].news_time)
                 res.send({
                     news:res_news,
                     top_news:res_top
