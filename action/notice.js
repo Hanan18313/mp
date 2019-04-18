@@ -5,5 +5,7 @@ this.getSignName = (req,res,next) => {
     
     var params = url.parse(req.url,true).query
     console.log(params)
-    res.send(params)
+    console.log(res)
+   // res.send(params)
+    res.send(res)
 }
