@@ -116,6 +116,7 @@ this.sendUserName = function(params,callback){
                 console.log(err)
             }else{
                 console.log(res)
+                callback(res)
             }
         })
     })
