@@ -101,7 +101,22 @@ this.sendUserName = function(params,callback){
         let data = {
             touser:'oX4n945b-6hWoU3X35AvZk8ejD0c',
             template_id:'bCPEvJkwhFE2Ae6_dkY3k7eFnZgxuNa4Qh1HKegY7P8',
-            form_id:form_id
+            form_id:form_id,
+            page:'index',
+            data:{
+                "keyword1":{
+                    "value":"123456"
+                },
+                "keyword2": {
+                    "value": "2015年01月05日 12:30"
+                },
+                    "keyword3": {
+                    "value": "腾讯微信总部"
+                },
+                    "keyword4": {
+                    "value": "广州市海珠区新港中路397号"
+                }
+            }
         }
         let options = {
             url:templateMsgUrl,
