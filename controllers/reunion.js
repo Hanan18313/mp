@@ -64,6 +64,7 @@ this.getOpenIdByCode = function(req,res,next){
         if(!code){
             reject(errorMapper.lackParams)
         }else{
+<<<<<<< HEAD
             const url = 'https://api.weixin.qq.com/sns/jscode2session?appid='+APPID+'&secret='+SECRET+'&js_code='+code+'&grant_type=authorization_code';
             request.get(url,(err,res,body) => {
                 body = typeof(body) == 'object' ? body : JSON.parse(body)
@@ -72,6 +73,37 @@ this.getOpenIdByCode = function(req,res,next){
                         code:200,
                         msg:'获取成功',
                         data:body.openid
+=======
+            res.send(result)
+        }
+        
+    })
+}
+this.apply = function(req,res){
+    var query = req.body
+    var name = query.name
+    var openid = query.openid
+    var portrait = query.avatarUrl
+    Mod_reunion.apply(name,function(result){
+        if(result[0] != null){
+            // 数据库存在该名字
+            if(result[0].open_id){
+                // 改名字已被占用
+                // 返回申诉界面
+                res.send({
+                    code:400,
+                    msg:'名字已被占用'
+                })
+            }else{
+                // 合法的人，并且是第一次进入的情况
+                // 开事务
+                // 更新openId
+                // 跳转到首页
+                Mod_reunion.apply_openid(name,openid,portrait,function(result){
+                    res.send({
+                        code:201,
+                        msg:'更新成功'
+>>>>>>> 51c011a4f59a8981ac64878b44d2b4e704f863c5
                     })
                 }else{
                     resolve({
