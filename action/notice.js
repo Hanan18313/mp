@@ -7,6 +7,5 @@ this.getSignName = (req,res,next) => {
     console.log(params)
     console.log(res)
    // res.send(params)
-   LOG(res)
     res.send(res)
 }
