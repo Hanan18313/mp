@@ -14,6 +14,7 @@ this.getSignName = (req,res,next,) => {
     const sha1 = crypto.createHash("sha1")
     sha1.update(array);
     const str = sha1.digest('hex')
+    res.send(str)
     console.log(str)
     if(str == signature){
         return true
