@@ -1,0 +1,9 @@
+[2019-04-18T15:29:59.163] [INFO] log_file - TypeError: First argument must be a string or Buffer
+    at write_ (_http_outgoing.js:642:11)
+    at ClientRequest.write (_http_outgoing.js:617:10)
+    at Request.write (D:\wx_demo\mp-server\node_modules\request\request.js:1500:27)
+    at end (D:\wx_demo\mp-server\node_modules\request\request.js:549:18)
+    at Immediate._onImmediate (D:\wx_demo\mp-server\node_modules\request\request.js:578:7)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)

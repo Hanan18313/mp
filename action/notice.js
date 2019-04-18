@@ -1,6 +1,7 @@
 var ServiceNotice = require('../service/notice.js')
 var url = require('url')
 var crypto = require('crypto')
+var request = require('request')
 
 this.getSignName = (req,res,next,) => {
     var params = url.parse(req.url,true).query
