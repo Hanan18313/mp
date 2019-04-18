@@ -22,3 +22,15 @@ this.getSignName = (req,res,next,) => {
         return false
     }
 }
+this.getOpenIdByCode = function(req,res,next){
+    const params = url.parse(req.url,true).query
+    ServiceNotice.getOpenIdByCode(params,result => {
+        res.send(result)
+    })
+}
+this.sendUserName = function(req,res,next){
+    const params = req.body;
+    ServiceNotice.sendUserName(params,result => {
+        res.send(result)
+    })
+}
