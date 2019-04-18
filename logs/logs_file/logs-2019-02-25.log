@@ -1,0 +1,24 @@
+[2019-02-25T14:24:26.657] [INFO] log_file - { ReferenceError: APPID is not defined
+    at Promise (D:\wx_demo\mp-server\controllers\reunion.js:56:79)
+    at doResolve (D:\wx_demo\mp-server\node_modules\promise\lib\core.js:91:5)
+    at new Promise (D:\wx_demo\mp-server\node_modules\promise\lib\core.js:71:3)
+    at Object.getOpenIdByCode (D:\wx_demo\mp-server\controllers\reunion.js:52:5)
+    at D:\wx_demo\mp-server\routes\reunion.js:7:21
+    at Layer.handle [as handle_request] (D:\wx_demo\mp-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\wx_demo\mp-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\wx_demo\mp-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\wx_demo\mp-server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\wx_demo\mp-server\node_modules\express\lib\router\index.js:281:22 code: -1, data: [] }
+[2019-02-25T14:24:26.659] [INFO] log_file - { code: -1, msg: 'APPID is not defined', data: [] }
+[2019-02-25T14:25:10.895] [INFO] log_file - { ReferenceError: code is not defined
+    at Promise (D:\wx_demo\mp-server\controllers\reunion.js:59:115)
+    at doResolve (D:\wx_demo\mp-server\node_modules\promise\lib\core.js:91:5)
+    at new Promise (D:\wx_demo\mp-server\node_modules\promise\lib\core.js:71:3)
+    at Object.getOpenIdByCode (D:\wx_demo\mp-server\controllers\reunion.js:55:5)
+    at D:\wx_demo\mp-server\routes\reunion.js:7:21
+    at Layer.handle [as handle_request] (D:\wx_demo\mp-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\wx_demo\mp-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\wx_demo\mp-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\wx_demo\mp-server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\wx_demo\mp-server\node_modules\express\lib\router\index.js:281:22 code: -1, data: [] }
+[2019-02-25T14:25:10.898] [INFO] log_file - { code: -1, msg: 'code is not defined', data: [] }

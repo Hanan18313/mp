@@ -1,20 +1,8 @@
 {
     "proxy_url":"https://os.langjie.com",
     "imgUrl":"https://mp.langjie.com/images/",
-    "mysql_host":"114.55.104.101",
+    "mysql_host":"localhost",
     "mysql_user":"root",
-    "mysql_password":"437612langjie",
-    "mysql_port":"3306",
-    "mysql_host_":"114.55.104.101",
-    "mysql_user_":"root",
-    "mysql_password_":"437612langjie",
-    "mysql_port_":"3306",
-    "reunion_secret":"6a2f68b101217a3ce73de6939cb70df7",
-    "reunion_appid":"wx1bff49ece2b88778",
-    "appid_annual":"wxd984f4aa68d4a52e",
-    "secret_annual":"5bc6a8b4bed3a4b3e628e9564b48d7a4",
-    "appid":"wx238ca91cc7a15764",
-    "secret":"655d3bf13a70671966abdd4d2c6be206",
-    "appid_annual_signIn":"wx6205b94ceda549a6",
-    "secret_annual_signIn":"ada2e7017b0bb02c71b3a14138985dfb"
+    "mysql_password":"123456",
+    "mysql_port":"3306"
 }

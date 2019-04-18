@@ -1,0 +1,26 @@
+[2019-02-28T10:37:12.900] [INFO] log_file - { ReferenceError: request is not defined
+    at Promise (D:\wx_demo\mp-server\service\reunion.js:65:13)
+    at new Promise (<anonymous>)
+    at Object.getOpenIdByCode (D:\wx_demo\mp-server\service\reunion.js:60:5)
+    at Object.getOpenIdByCode (D:\wx_demo\mp-server\action\reunion.js:13:20)
+    at D:\wx_demo\mp-server\routes\reunion.js:15:23
+    at Layer.handle [as handle_request] (D:\wx_demo\mp-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\wx_demo\mp-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\wx_demo\mp-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\wx_demo\mp-server\node_modules\express\lib\router\layer.js:95:5)
+    at D:\wx_demo\mp-server\node_modules\express\lib\router\index.js:281:22 code: -1, data: [] }
+[2019-02-28T11:11:28.587] [INFO] log_file - { TypeError: Cannot read property 'msg' of undefined
+    at createError (D:\wx_demo\mp-server\service\reunion.js:15:34)
+    at Users.findOne.then.result (D:\wx_demo\mp-server\service\reunion.js:104:19)
+    at tryCatcher (D:\wx_demo\mp-server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (D:\wx_demo\mp-server\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (D:\wx_demo\mp-server\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (D:\wx_demo\mp-server\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (D:\wx_demo\mp-server\node_modules\bluebird\js\release\promise.js:694:18)
+    at _drainQueueStep (D:\wx_demo\mp-server\node_modules\bluebird\js\release\async.js:138:12)
+    at _drainQueue (D:\wx_demo\mp-server\node_modules\bluebird\js\release\async.js:131:9)
+    at Async._drainQueues (D:\wx_demo\mp-server\node_modules\bluebird\js\release\async.js:147:5)
+    at Immediate.Async.drainQueues (D:\wx_demo\mp-server\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) code: -1, data: [] }

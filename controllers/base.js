@@ -3,32 +3,6 @@ var request = require('request')
 var fs = require('fs')
 var CONFIG = JSON.parse(fs.readFileSync('./config.json').toString())
 
-this.userInfo = function(req,res){
-    var annual_code = url.parse(req.url,true).query.annual_code,
-    exhibition_code = url.parse(req.url,true).query.exhibition_code,
-    annual_signIn_code = url.parse(req.url,true).query.annual_signIn_code,
-    reunion_code = url.parse(req.url,true).query.reunion_code
-    value = url.parse(req.url,true).query.value
-    if(value == 'annual'){
-        WX_ID_Annual(annual_code,function(result){
-            var wx_id = JSON.parse(result)
-            res.send(result)
-        })
-    }else if(value == 'exhibition'){ //******************************济南展会 */
-        WX_ID(exhibition_code,function(result){
-            var wx_id = JSON.parse(result);
-            res.send(result)
-        })
-    }else if(value == 'annual_signIn'){ //********************************朗杰年会 */
-        WX_ID_Annual_signIn(annual_signIn_code,function(result){
-            res.send(result)
-        })
-    }else if(value == 'reunion'){
-        WX_IDReunion(reunion_code,function(result){
-            res.send(result)
-        })
-    }
-}
 /** 
  * 时间格式化
 */

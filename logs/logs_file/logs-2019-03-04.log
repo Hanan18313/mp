@@ -1,0 +1,15 @@
+[2019-03-04T10:46:29.454] [INFO] log_file - { ReferenceError: unionId is not defined
+    at Promise.then (D:\wx_demo\mp-server\service\meeting.js:255:25)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) code: -1, data: [] }
+[2019-03-04T14:30:41.036] [INFO] log_file - { TypeError: callback is not a function
+    at PhoneCode.code (D:\wx_demo\mp-server\service\base.js:83:9)
+    at Promise.then (D:\wx_demo\mp-server\service\meeting.js:257:31)
+    at <anonymous> code: -1, data: [] }
+[2019-03-04T14:30:59.943] [INFO] log_file - { TypeError: callback is not a function
+    at PhoneCode.code (D:\wx_demo\mp-server\service\base.js:83:9)
+    at Promise.then (D:\wx_demo\mp-server\service\meeting.js:256:31)
+    at <anonymous> code: -1, data: [] }
+[2019-03-04T14:40:07.833] [INFO] log_file - { ReferenceError: mobile is not defined
+    at Promise.then (D:\wx_demo\mp-server\service\meeting.js:268:82)
+    at <anonymous> code: -1, data: [] }

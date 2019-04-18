@@ -10,12 +10,11 @@ var log4js = require('./logs/start_log.js')
 var request = require('request')
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString())
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 var app = express();
 
-var objMulter = multer({dest : 'public/images'})
-app.use(objMulter.any())
+// var objMulter = multer({dest : 'public/images'})
+// app.use(objMulter.any())
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -43,54 +42,20 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+  
 });
-var Pool1 =  mysql.createPool({
-  host:CONFIG.mysql_host_,
-  user:CONFIG.mysql_user_,
-  port:CONFIG.mysql_port_,
-  password:CONFIG.mysql_password_,
+process.on('uncaughtException', function (err) {
+  LOG(err.stack);
+});
+var Pool =  mysql.createPool({
+  host:CONFIG.mysql_host,
+  user:CONFIG.mysql_user,
+  port:CONFIG.mysql_port,
+  password:CONFIG.mysql_password,
   database:'lj_mp'
 })
-var Pool2 = mysql.createPool({
-  host:CONFIG.mysql_host,
-  user:CONFIG.mysql_user,
-  port:CONFIG.mysql_port,
-  password:CONFIG.mysql_password,
-  database:'lj_node'
-})
-var Pool3 = mysql.createPool({
-  host:CONFIG.mysql_host,
-  user:CONFIG.mysql_user,
-  port:CONFIG.mysql_port,
-  password:CONFIG.mysql_password,
-  database:'classmate'
-})
 global.CON = function(sql,val,callback){
-  Pool1.getConnection(function(err,conn){
-    if(err){
-      callback(err,null,null)
-    }else{
-      conn.query(sql,val,function(qerr,vals,fields){
-        callback(qerr,vals,fields)
-      })
-      conn.release()
-    }
-  })
-}
-global.CONN = function(sql,val,callback){
-  Pool2.getConnection(function(err,conn){
-    if(err){
-      callback(err,null,null)
-    }else{
-      conn.query(sql,val,function(qerr,vals,fields){
-        callback(qerr,vals,fields)
-      })
-      conn.release()
-    }
-  })
-}
-global.CONNN = function(sql,val,callback){
-  Pool3.getConnection(function(err,conn){
+  Pool.getConnection(function(err,conn){
     if(err){
       callback(err,null,null)
     }else{
@@ -106,6 +71,7 @@ global.LOG = function(info){
   logger.info(info)
   console.log(info)
 }
+global.DIRNAME = __dirname;
 //事务回滚
 global.ROLLBACK = function(callback){
   Pool1.getConnection(function(err,conn){
@@ -116,18 +82,4 @@ global.ROLLBACK = function(callback){
     }
   })
 }
-global.WX_IDReunion = function(code,callback){
-  var appid = CONFIG.reunion_appid;
-  var secret = CONFIG.reunion_secret;
-  var infoUrl = 'https://api.weixin.qq.com/sns/jscode2session?appid='+appid+'&secret='+secret+'&js_code='+code+'&grant_type=authorization_code';
-  request.get(infoUrl,function(err,response,result){
-    if(err){
-      //throw Error(err)
-      LOG(err)
-    }else{
-      callback(result)
-    }
-  })
-}
-
 module.exports = app;
