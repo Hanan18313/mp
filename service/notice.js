@@ -99,7 +99,7 @@ this.sendUserName = function(params,callback){
         const ACCESS_TOKEN = value
         var templateMsgUrl = 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token='+ACCESS_TOKEN;
         let data = {
-            touser:'oX4n945b-6hWoU3X35AvZk8ejD0c',//小程序appid
+            touser:'oX4n943MkonOhZYXgb9adpLmuVAM',//小程序appid
             template_id:'bCPEvJkwhFE2Ae6_dkY3k7eFnZgxuNa4Qh1HKegY7P8',//小程序模板消息id
             form_id:form_id,
             page:'index',
