@@ -35,3 +35,9 @@ this.sendUserName = function(req,res,next){
         res.send(result)
     })
 }
+this.uniFormMsgSend = function(req,res,next){
+    const params = req.body
+    ServiceNotice.uniFormMsgSend(params,result => {
+        res.send(result)
+    })
+}

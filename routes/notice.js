@@ -10,4 +10,7 @@ module.exports = function(app){
     app.post('/sendUserName',function(req,res,next){
         actionNotice.sendUserName(req,res,next)
     })
+    app.post('/uniFormMsgSend',function(req,res,next){
+        actionNotice.uniFormMsgSend(req,res,next)
+    })
 }
