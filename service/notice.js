@@ -96,45 +96,45 @@ this.sendUserName = function(params,callback){
         })
     }).then(value => {
         console.log(form_id)
-     //   console.log(value)
-        const ACCESS_TOKEN = value
-        var templateMsgUrl = 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token='+ACCESS_TOKEN;
-        let data = {
-            touser:'oX4n945b-6hWoU3X35AvZk8ejD0c',
-            template_id:'bCPEvJkwhFE2Ae6_dkY3k7eFnZgxuNa4Qh1HKegY7P8',//小程序模板消息id
-            form_id:'9ebacad6a346449ebc39c193f5a60302',
-            page:'index',
-            data:{
-                "keyword1":{
-                    "value":"123456"
-                },
-                "keyword2": {
-                    "value": "2015年01月05日 12:30"
-                },
-                    "keyword3": {
-                    "value": "腾讯微信总部"
-                },
-                    "keyword4": {
-                    "value": "广州市海珠区新港中路397号"
-                }
-            }
-        }
-        let options = {
-            url:templateMsgUrl,
-            method:'POST',
-            header:{
-                'Content-Type':'application/json'
-            },
-            body:JSON.stringify(data)
-        }
-        request(options,(err,Response,res)=> {
-            if(err){
-                console.log(err)
-            }else{
-                console.log(res)
-                callback(res)
-            }
-        })
+        callback(form_id)
+        // const ACCESS_TOKEN = value
+        // var templateMsgUrl = 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token='+ACCESS_TOKEN;
+        // let data = {
+        //     touser:'oX4n945b-6hWoU3X35AvZk8ejD0c',
+        //     template_id:'bCPEvJkwhFE2Ae6_dkY3k7eFnZgxuNa4Qh1HKegY7P8',//小程序模板消息id
+        //     form_id:form_id,
+        //     page:'index',
+        //     data:{
+        //         "keyword1":{
+        //             "value":"123456"
+        //         },
+        //         "keyword2": {
+        //             "value": "2015年01月05日 12:30"
+        //         },
+        //             "keyword3": {
+        //             "value": "腾讯微信总部"
+        //         },
+        //             "keyword4": {
+        //             "value": "广州市海珠区新港中路397号"
+        //         }
+        //     }
+        // }
+        // let options = {
+        //     url:templateMsgUrl,
+        //     method:'POST',
+        //     header:{
+        //         'Content-Type':'application/json'
+        //     },
+        //     body:JSON.stringify(data)
+        // }
+        // request(options,(err,Response,res)=> {
+        //     if(err){
+        //         console.log(err)
+        //     }else{
+        //         console.log(res)
+        //         callback(res)
+        //     }
+        // })
     })
 }
 
