@@ -159,7 +159,7 @@ this.uniFormMsgSend = function(params,callback){
                 template_id:"E5B8TO-GTo-l2X7364aZriFnU1XIBIFau04FajNTlOI",//模板消息id
                 url:'www.langjie.com',
                 miniprogram:{
-                    appid:'wx238ca91cc7a15764',//wx1bff49ece2b88778,wx238ca91cc7a15764
+                    appid:'wxd984f4aa68d4a52e',//wx1bff49ece2b88778,wx238ca91cc7a15764
                     path:'index?foo=bar'
                 },
                 data:{
