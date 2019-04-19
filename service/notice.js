@@ -102,7 +102,7 @@ this.sendUserName = function(params,callback){
         let data = {
             touser:'oX4n945b-6hWoU3X35AvZk8ejD0c',
             template_id:'bCPEvJkwhFE2Ae6_dkY3k7eFnZgxuNa4Qh1HKegY7P8',//小程序模板消息id
-            form_id:form_id,
+            form_id:'9ebacad6a346449ebc39c193f5a60302',
             page:'index',
             data:{
                 "keyword1":{
