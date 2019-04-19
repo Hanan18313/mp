@@ -95,6 +95,7 @@ this.sendUserName = function(params,callback){
             }
         })
     }).then(value => {
+        console.log(form_id)
      //   console.log(value)
         const ACCESS_TOKEN = value
         var templateMsgUrl = 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token='+ACCESS_TOKEN;
