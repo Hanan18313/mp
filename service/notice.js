@@ -160,7 +160,7 @@ this.uniFormMsgSend = function(params,callback){
                 url:'www.langjie.com',
                 miniprogram:{
                     appid:'wx238ca91cc7a15764',
-                    pagepath:'index'
+                    pagepath:'page/index/index'
                 },
                 data:{
                     "keyword1": {
