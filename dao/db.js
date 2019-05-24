@@ -4,7 +4,7 @@ var fs = require('fs')
 exports.DisSequelize = function(){
     var config = JSON.parse(fs.readFileSync('./config.json').toString());
     return new Sequelize(
-        'lj_mp',
+        'lj_display',
         config.mysql_user,
         config.mysql_password,
         {

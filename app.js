@@ -8,6 +8,10 @@ var logger = require('morgan');
 var multer = require('multer')
 var log4js = require('./logs/start_log.js')
 var request = require('request')
+var session = require('express-session');
+var RedisStore = require('connect-redis')(session)
+var ejs = require('ejs')
+
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString())
 var indexRouter = require('./routes/index');
 
@@ -16,8 +20,9 @@ var app = express();
 // var objMulter = multer({dest : 'public/images'})
 // app.use(objMulter.any())
 // view engine setup
+app.engine('.html',ejs.__express)
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'html');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -32,6 +37,17 @@ require('./routes/index')(app)
 app.use(function(req, res, next) {
   next(createError(404));
 });
+var options = {
+  host:'127.0.0.1',
+  port:'6379'
+}
+app.use(session({
+  store:new RedisStore(options),
+  secret:'langjie',
+  resave:false,
+  cookie:{maxAge:30*60},
+  saveUninitialized:true
+}))
 
 // error handler
 app.use(function(err, req, res, next) {

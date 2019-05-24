@@ -5,4 +5,5 @@ var router = express.Router();
 module.exports = function(app){
 //  require('./miniDisplay')(app);
   require('./notice')(app);
+  require('./canvas')(app);
 }

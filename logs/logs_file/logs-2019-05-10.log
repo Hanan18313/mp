@@ -1,0 +1,32 @@
+[2019-05-10T09:02:32.513] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:32.513] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:33.722] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:33.726] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:35.070] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:35.078] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:36.657] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:36.665] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:38.649] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:38.657] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:41.331] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:41.338] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:45.207] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:45.222] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:51.056] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-05-10T09:02:51.087] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <title>分享功能</title>
+</head>
+<body>
+    <div>分享功能</div>
+</body>
+<script>
+    wx.config({
+        debug:true,
+        appId:'wx0f012ab2b8db902d',
+        timestamp:1234567890,
+        nonceStr:'han',
+        signature:'b45b695e677b6de819fc259b4aced288007ef7ba',
+        jsApiList:['updateAppMessageShareData']
+    })
+    wx.ready(function(){
+        console.log('1111')
+        wx.updateAppMessageShareData({
+            title:'11',
+            desc:'22',
+            link:'',
+            imgUrl:'',
+            success:function(res){
+                console.log('success')
+            },
+            fail:function(){
+                console.log('fail')
+            }
+        })
+    })
+</script>
+</html>

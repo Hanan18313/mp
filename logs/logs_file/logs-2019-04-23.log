@@ -1,0 +1,20 @@
+[2019-04-23T08:44:49.180] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - read ECONNRESET
+    at TCP.onread (net.js:622:25)
+[2019-04-23T08:44:49.183] [INFO] log_file - AbortError: Ready check failed: Redis connection lost and command aborted. It might have been processed.
+    at RedisClient.flush_and_error (D:\wx_demo\mp-server\node_modules\redis\index.js:362:23)
+    at RedisClient.connection_gone (D:\wx_demo\mp-server\node_modules\redis\index.js:664:14)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\redis\index.js:289:14)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at TCP._handle.close [as _onclose] (net.js:561:12)
+[2019-04-23T08:44:49.184] [INFO] log_file - Error: Redis connection to 127.0.0.1:6379 failed - read ECONNRESET
+    at TCP.onread (net.js:622:25)
+[2019-04-23T08:44:49.185] [INFO] log_file - AbortError: Ready check failed: Redis connection lost and command aborted. It might have been processed.
+    at RedisClient.flush_and_error (D:\wx_demo\mp-server\node_modules\redis\index.js:362:23)
+    at RedisClient.connection_gone (D:\wx_demo\mp-server\node_modules\redis\index.js:664:14)
+    at Socket.<anonymous> (D:\wx_demo\mp-server\node_modules\redis\index.js:289:14)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at TCP._handle.close [as _onclose] (net.js:561:12)

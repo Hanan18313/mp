@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('mp-server:server');
 var http = require('http');
+//require('../mongoDB/db');
 
 /**
  * Get port from environment and store in Express.
@@ -88,4 +89,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  require('../service/redis');
 }
