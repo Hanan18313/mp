@@ -38,7 +38,7 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 var options = {
-  host:'0.0.0.0',
+  host:'47.107.252.60',
   port:'6379'
 }
 app.use(session({

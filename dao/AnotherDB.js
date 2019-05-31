@@ -12,7 +12,7 @@ exports.lj_NodeSequelize = function(){
         {
             dialect: 'mysql',
 			host: config.mysql_host,
-			port:3306, 
+			port:3307, 
 			pool: {
 				max: 10,
 				min: 0,

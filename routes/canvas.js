@@ -9,4 +9,7 @@ module.exports = function(app){
     app.get('/share',function(req,res,next){
         res.render('./share')
     })
+    app.get('/express',function(req,res,next){
+        res.render('./express')
+    })
 }

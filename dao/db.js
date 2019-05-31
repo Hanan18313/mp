@@ -9,7 +9,7 @@ exports.DisSequelize = function(){
         config.mysql_password,
         {
             host:config.mysql_host,
-            port:3306,
+            port:3307,
             dialect:'mysql',
             pool:{
                 max:5,
