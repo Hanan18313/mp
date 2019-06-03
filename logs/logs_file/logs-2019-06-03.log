@@ -1,0 +1,24 @@
+[2019-06-03T16:59:33.743] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T16:59:54.953] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:00:16.297] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:00:37.877] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:00:59.864] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:01:22.538] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:01:46.383] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:02:12.216] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:02:41.434] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:03:16.397] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:04:01.130] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-03T17:05:02.474] [INFO] log_file - Error: Redis connection to 172.0.0.1:6379 failed - connect ETIMEDOUT 172.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)

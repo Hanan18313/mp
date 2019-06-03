@@ -1,9 +1,13 @@
-var redis = require('redis');
-var client = redis.createClient('//47.107.252.60:6379')
-client.auth('123456',(err,result) => {
-    console.log(err)
-    console.log(result)
-})
+var redis = require('redis'),
+    RDS_PORT = 56379,
+    RDS_HOST = '47.107.252.60',
+    RDS_PWD = '123456',
+    RDS_OPTS = {auth_pass:RDS_PWD},
+    client = redis.createClient(RDS_PORT,RDS_HOST,RDS_OPTS);
+    client.on('ready',() =>{
+        console.log('redis connect success')
+    })
+    
 
 /**
  * 生成异常对象
@@ -37,11 +41,6 @@ const errorMapper = {
         msg:'缺少参数'
     }
 }
-
-client.on('ready',() =>{
-    console.log('redis connect success')
-})
-
 /**
  * 将formId存入内存，设置7天失效,存放一个，SET时更新最新。
  */

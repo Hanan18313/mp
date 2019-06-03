@@ -37,17 +37,18 @@ require('./routes/index')(app)
 app.use(function(req, res, next) {
   next(createError(404));
 });
-var options = {
-  host:CONFIG.redis_host,
-  port:CONFIG.redis_port,
-}
-app.use(session({
-  store:new RedisStore(options),
-  secret:'langjie',
-  resave:false,
-  cookie:{maxAge:30*60},
-  saveUninitialized:true
-}))
+// var options = {
+//   host:CONFIG.redis_host,
+//   port:CONFIG.redis_port,
+//  // pass:'123456',
+// }
+// app.use(session({
+//   store:new RedisStore(options),
+//   secret:'langjie',
+//   resave:false,
+//   cookie:{maxAge:30*60},
+//   saveUninitialized:true
+// }))
 
 // error handler
 app.use(function(err, req, res, next) {
