@@ -15,7 +15,6 @@ class MulUploadImg {
 	    form.uploadDir = DIRNAME+'/public';
 	    form.keepExtensions = true; //保留后缀
         form.type = true;
-        console.log(form)
 	    form.parse(req, function(err, fields, files) {
 	    	if(err){
 	    		LOG(err);
@@ -74,7 +73,7 @@ class MulUploadImg {
 }
 
 /**
- * 获取时间 
+ * 获取本地时间 
  */
 
 function TIME(t){
@@ -142,26 +141,16 @@ function Queue() {
  * 获取网络时间
  */
 
- function getNetTime(){
-	//  var xhr = new XMLHttpRequest();
-	//  if(!xhr){
-	// 	 xhr = new ActiveXObject('Microsoft.XMLHTTP');
-	//  }
-	//  xhr.open("HEAD",location.href,true);
-	//  xhr.onreadystatechange = function(){
-	// 	 if(xhr.readyState == 4 && xhr.status == 200){
-	// 		 alert(dateTimeFormate(xhr.getAllResponseHeaders('Date')));
-	// 		 return dateTimeFormate(xhr.getAllResponseHeaders('Date'))
-	// 	 }
-	//  }
-	//  xhr.send(null)
-
-
-	nettime('https://www.google.com').then(result => {
-		console.log(result)
-		return result
-	})
- }
+getNetTime = function(params,callback){
+    const url = 'http://www.ntsc.ac.cn';
+    request.get(url,(err,result) => {
+        if(err){
+            LOG(err)
+        }else{
+            callback(result)
+        }
+    })
+}
  /**
   * 时间格式化
   */

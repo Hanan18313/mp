@@ -1,5 +1,5 @@
 var redis = require('redis');
-var client = redis.createClient()
+var client = redis.createClient(56379)
 
 /**
  * 生成异常对象
@@ -34,7 +34,7 @@ const errorMapper = {
     }
 }
 
-client.on('ready',() =>{
+client.on('connect',() =>{
     console.log('redis connect success')
 })
 

@@ -18,3 +18,15 @@
     at emitOne (events.js:116:13)
     at Socket.emit (events.js:211:7)
     at TCP._handle.close [as _onclose] (net.js:561:12)
+[2019-05-31T14:28:40.368] [INFO] log_file - ReferenceError: request is not defined
+    at getNetTime (D:\wx_demo\mp-server\bin\wsSocket.js:16:3)
+    at Timeout.setInterval [as _onTimeout] (D:\wx_demo\mp-server\bin\wsSocket.js:45:27)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+[2019-05-31T14:28:40.381] [INFO] log_file - ReferenceError: request is not defined
+    at getNetTime (D:\wx_demo\mp-server\bin\wsSocket.js:16:3)
+    at Timeout.setInterval [as _onTimeout] (D:\wx_demo\mp-server\bin\wsSocket.js:45:27)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)

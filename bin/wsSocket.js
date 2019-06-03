@@ -1,6 +1,6 @@
 var WebSocket = require('ws')
 const Base = require('../service/base.js')
-const buff = new Buffer(10)
+const request = require('request')
 
 var queue = new Base.Queue()
 var Ws = new WebSocket.Server({
@@ -10,6 +10,17 @@ var Ws = new WebSocket.Server({
 const a_time = [1,2,3,4,5,6,7,8,9]
 const a_position = [1,2,3,4,5,6,7,8,9] 
 
+//获取网络时间
+function getNetTime(){
+  const url = 'http://www.ntsc.ac.cn';
+  request.get(url,(err,result) => {
+      if(err){
+          console.log(err)
+      }else{
+          return result
+      }
+  })
+}
 // Broadcast to all.
 Ws.broadcast = function broadcast(data) {
     Ws.clients.forEach(function each(client) {
@@ -28,31 +39,13 @@ Ws.broadcast = function broadcast(data) {
         positionItem:positionItem
       }
       // Broadcast to everyone else.
-      console.log(data)
-      if(data == '-101'){
         Ws.clients.forEach(function each(client){
           if(client !== ws && client.readyState === WebSocket.OPEN){
             var sender = setInterval(() => {
-              client.send(queue.front());
-              queue.dequeue()
-              if(queue.isEmpty()){
-                clearInterval(sender)
-              }
+              client.send(getNetTime());
             },20)
           }
         })
-      }else{
-        var S_obj = JSON.stringify(obj)
-        queue.enqueue(data)
-        Ws.clients.forEach(function each(client){
-          if(client !== ws && client.readyState === WebSocket.OPEN){
-            if(queue.size() > 100){
-              client.send(queue.front())
-              queue.dequeue()
-            }
-          }
-        })
-      } 
     });
   });
 

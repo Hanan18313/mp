@@ -7,6 +7,7 @@ const Base = require('./base.js')
 const nettime = require('nettime')
 var redis = require('redis')
 var client = redis.createClient();
+var Common = require('./common.js')
 
 const APPID = 'wx238ca91cc7a15764';
 const SECRET = '17bc3bcd68b4bef8cde7e56a0b9a6e48';
@@ -391,5 +392,4 @@ this.getNetTime = function(params,callback){
             callback(result)
         }
     })
-
 }
