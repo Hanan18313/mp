@@ -38,8 +38,8 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 var options = {
-  host:'47.107.252.60',
-  port:'6379'
+  host:CONFIG.redis_host,
+  port:CONFIG.redis_port,
 }
 app.use(session({
   store:new RedisStore(options),

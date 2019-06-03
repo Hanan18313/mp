@@ -8,5 +8,7 @@
     "mongo_host": "127.0.0.1",
 	"mongo_database": "myTest",
 	"mongo_user": "hwl",
-	"mongo_password": "123456"
+    "mongo_password": "123456",
+    "redis_host":"127.0.0.1",
+    "redis_port":"6379"
 }
