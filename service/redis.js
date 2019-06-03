@@ -1,5 +1,9 @@
 var redis = require('redis');
-var client = redis.createClient(56379)
+var client = redis.createClient('//47.107.252.60:6379')
+client.auth('123456',(err,result) => {
+    console.log(err)
+    console.log(result)
+})
 
 /**
  * 生成异常对象
@@ -34,7 +38,7 @@ const errorMapper = {
     }
 }
 
-client.on('connect',() =>{
+client.on('ready',() =>{
     console.log('redis connect success')
 })
 

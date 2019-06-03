@@ -393,3 +393,20 @@ this.getNetTime = function(params,callback){
         }
     })
 }
+
+/**
+ * 获取容器中的数据
+ */
+this.getDockerData = function(params,callback){
+    Vip_basic.findAll({
+        where:{
+            checked:1
+        }
+    }).then(result => {
+        callback({
+            code:200,
+            msg:'',
+            data:result
+        })
+    }).catch(e => {throw e})
+}

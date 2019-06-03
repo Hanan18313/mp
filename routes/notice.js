@@ -51,4 +51,9 @@ module.exports = function(app){
     app.get('/getNetTime',function(req,res,next){
         actionNotice.getNetTime(req,res,next)
     })
+
+    //获取mysql容器中数据
+    app.get('/getDockerData',function(req,res,next){
+        actionNotice.getDockerData(req,res,next)
+    })
 }

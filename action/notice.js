@@ -156,3 +156,13 @@ this.getNetTime = function(req,res,next){
         res.send(result)
     })
 }
+
+/**
+ * 获取容器中的数据
+ */
+this.getDockerData = function(req,res,next){
+    const params = {}
+    ServiceNotice.getDockerData(params,result => {
+        res.send(result)
+    })
+}
