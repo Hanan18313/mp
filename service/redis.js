@@ -1,5 +1,5 @@
 var redis = require('redis'),
-    RDS_PORT = 56379,
+    RDS_PORT = 6379,
     RDS_HOST = '47.107.252.60',
     RDS_PWD = '123456',
     RDS_OPTS = {auth_pass:RDS_PWD},

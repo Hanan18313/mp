@@ -1,0 +1,15 @@
+[2019-06-04T08:40:24.366] [INFO] log_file - Error: Redis connection to 47.107.252.60:56379 failed - connect ECONNREFUSED 47.107.252.60:56379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-04T08:40:28.758] [INFO] log_file - Error: Redis connection to 47.107.252.60:56379 failed - connect ECONNREFUSED 47.107.252.60:56379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-04T08:40:30.067] [INFO] log_file - Error: Redis connection to 47.107.252.60:56379 failed - connect ECONNREFUSED 47.107.252.60:56379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-04T08:40:31.521] [INFO] log_file - Error: Redis connection to 47.107.252.60:56379 failed - connect ECONNREFUSED 47.107.252.60:56379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-04T08:40:33.210] [INFO] log_file - Error: Redis connection to 47.107.252.60:56379 failed - connect ECONNREFUSED 47.107.252.60:56379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-04T08:40:35.296] [INFO] log_file - Error: Redis connection to 47.107.252.60:56379 failed - connect ECONNREFUSED 47.107.252.60:56379
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+[2019-06-04T08:52:40.031] [INFO] log_file - ReplyError: Ready check failed: NOAUTH Authentication required.
+    at parseError (D:\wx_demo\mp-server\node_modules\redis-parser\lib\parser.js:193:12)
+    at parseType (D:\wx_demo\mp-server\node_modules\redis-parser\lib\parser.js:303:14)
