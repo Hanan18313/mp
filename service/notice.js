@@ -2,11 +2,11 @@ const request = require('request');
 const Vip_basic = require('../dao').Vip_basic;
 const Apply = require('../dao').Apply;
 const Organizer = require('../dao').Organizer;
-const serverRedis = require('../service/redis.js');
+// const serverRedis = require('../service/redis.js');
 const Base = require('./base.js')
 const nettime = require('nettime')
-var redis = require('redis')
-var client = redis.createClient();
+// var redis = require('redis')
+// var client = redis.createClient();
 var Common = require('./common.js')
 
 const APPID = 'wx238ca91cc7a15764';
@@ -91,9 +91,9 @@ this.getOpenIdByCode = function(params,callback){
 this.sendUserName = function(params,callback){
     const { form_id } = params;
     params.openid = '456'
-    serverRedis.formIdSaveToRedis(params,result => {
-        console.log(result)
-    })
+    // serverRedis.formIdSaveToRedis(params,result => {
+    //     console.log(result)
+    // })
     new Promise((resolve,reject) => {
         var getAccessTokenUrl = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid='+APPID+'&secret='+SECRET;
         request.get(getAccessTokenUrl,(err,Response,body) => {

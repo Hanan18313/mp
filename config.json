@@ -5,7 +5,7 @@
     "mysql_user":"root",
     "mysql_password":"123456",
     "mysql_port":"3307",
-    "mongo_host": "127.0.0.1",
+    "mongo_host": "47.107.252.60",
 	"mongo_database": "myTest",
 	"mongo_user": "hwl",
     "mongo_password": "123456",

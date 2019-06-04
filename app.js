@@ -8,9 +8,10 @@ var logger = require('morgan');
 var multer = require('multer')
 var log4js = require('./logs/start_log.js')
 var request = require('request')
-var session = require('express-session');
-var RedisStore = require('connect-redis')(session)
+//var session = require('express-session');
+//var RedisStore = require('connect-redis')(session)
 var ejs = require('ejs')
+
 
 global.CONFIG = JSON.parse(fs.readFileSync('./config.json').toString())
 var indexRouter = require('./routes/index');
@@ -49,6 +50,7 @@ app.use(function(req, res, next) {
 //   cookie:{maxAge:30*60},
 //   saveUninitialized:true
 // }))
+
 
 // error handler
 app.use(function(err, req, res, next) {
